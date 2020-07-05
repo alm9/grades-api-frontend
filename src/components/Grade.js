@@ -43,7 +43,7 @@ const Grade = (props) => {
   };
 
   const deleteGrade = () => {
-    GradeDataService.remove(currentGrade.id)
+    GradeDataService.remove(currentGrade._id)
       .then((response) => {
         props.history.push('/grade');
       })
